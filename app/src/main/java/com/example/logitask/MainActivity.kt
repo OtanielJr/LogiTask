@@ -18,5 +18,6 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         Log.d("Teste","Teste git")
+        Log.d("Teste","Teste git2")
     }
 }
