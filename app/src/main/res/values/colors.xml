@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="Anti_flash_white">#EBEBEB</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="bice_blue">#3A6EA5</color>
+    <color name="pumpkin">#FF6700</color>
 </resources>
