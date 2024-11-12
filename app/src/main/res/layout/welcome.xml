@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WelcomeActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/welcome_vector"
+            android:contentDescription="descricao_imagem" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/bottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0"
+        android:layout_weight="1">
+        
+        <LinearLayout
+            android:id="@+id/titleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/subtitleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            
+            <android.widget.Button
+                android:id="@+id/btgoToLogin"
+                android:layout_marginLeft="50"
+                android:layout_width="0"
+                android:layout_height="60"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:text="Iniciar"
+                android:background="@color/pumpkin"
+                >
+
+            </android.widget.Button>
+            <android.widget.Button
+                android:id="@+id/btgoToRegister"
+                android:layout_marginRight="50"
+                android:layout_marginLeft="10dp"
+                android:layout_width="0"
+                android:layout_height="60"
+                android:layout_weight="1"
+                android:text="Registar"
+                android:textFontWeight="bold"
+                android:textColor="@color/black"
+                android:fontFamily="">
+
+            </android.widget.Button>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
