@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_height="match_parent"
     android:paddingHorizontal="20dp"
-    android:paddingVertical="100dp">
+    android:paddingVertical="90dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,11 +16,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:textColor="@color/bice_blue"
-            android:layout_marginBottom="30dp"
+            android:textColor="@color/pumpkin"
+            android:layout_marginBottom="10dp"
             android:textStyle="bold"
             android:textSize="32dp"
-            android:text="Iniciar Sessão" />
+            android:text="Criar Conta" />
 
         <TextView
             android:layout_width="match_parent"
@@ -29,8 +29,8 @@
             android:textColor="@color/black"
             android:layout_marginBottom="50dp"
             android:textStyle="bold"
-            android:textSize="22dp"
-            android:text="Seja Bem vindo denovo!" />
+            android:textSize="16dp"
+            android:text="Crie uma conta e começe a gerir a sua equipa" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,11 +42,11 @@
                 android:id="@+id/emailInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/login_email_input"
+                android:background="@drawable/register_input"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="20dp"
-                android:textSize="16dp"
-                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:layout_marginBottom="40dp"
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="textEmailAddress"
@@ -56,50 +56,53 @@
                 android:id="@+id/PasswordInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/login_email_input"
+                android:background="@drawable/register_input"
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="20dp"
-                android:textSize="16dp"
-                android:layout_marginBottom="25dp"
+                android:textSize="18dp"
+                android:layout_marginBottom="40dp"
                 android:textStyle="bold"
                 android:ems="10"
-                android:inputType="text"
+                android:inputType="textVisiblePassword"
                 android:text="Password" />
 
-            <TextView
-                android:id="@+id/forgotPassword_redirect_link"
+            <EditText
+                android:id="@+id/PasswordRepeatInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/bice_blue"
-                android:textSize="16dp"
-                android:textAlignment="viewEnd"
+                android:background="@drawable/register_input"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="20dp"
                 android:textStyle="bold"
-                android:layout_marginBottom="25dp"
-                android:text="Esqueceu a palavra-passe?" />
+                android:textSize="18dp"
+                android:layout_marginBottom="40dp"
+                android:ems="10"
+                android:inputType="textVisiblePassword"
+                android:text="Insira a password novamente" />
 
 
         </LinearLayout>
 
         <android.widget.Button
-            android:id="@+id/btn_login"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:textSize="18dp"
             android:textStyle="bold"
             android:padding="15dp"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_button"
-            android:text="Iniciar Sessão"
+            android:background="@drawable/register_button"
+            android:text="Criar Conta"
             android:textColor="@color/white" />
 
         <TextView
-            android:id="@+id/register_redirect_link"
+            android:id="@+id/login_redirect_link"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:textSize="16dp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:text="Criar conta nova?"/>
+            android:text="Eu já tenho uma conta"/>
 
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
