@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".WelcomeActivity">
+    tools:context=".WelcomeActivity"
+    android:fontFamily="@font/Poppins_Bold">
 
 
     <LinearLayout
@@ -64,8 +65,9 @@
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
                 android:text="Iniciar"
-
+                android:textColor="@color/white"
                 android:background="@color/pumpkin"
+                android:fontFamily="@font/Poppins_SemiBold"
                 >
 
             </android.widget.Button>
@@ -79,7 +81,8 @@
                 android:text="Registar"
                 android:textFontWeight="bold"
                 android:textColor="@color/black"
-                android:fontFamily="">
+                android:fontFamily="@font/Poppins_SemiBold"
+                >
 
             </android.widget.Button>
         </LinearLayout>

@@ -18,9 +18,9 @@
             android:textAlignment="center"
             android:textColor="@color/bice_blue"
             android:layout_marginBottom="30dp"
-            android:textStyle="bold"
             android:textSize="32dp"
-            android:text="Iniciar Sessão" />
+            android:text="Iniciar Sessão"
+            android:fontFamily="@font/Poppins_Bold"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -30,7 +30,8 @@
             android:layout_marginBottom="50dp"
             android:textStyle="bold"
             android:textSize="22dp"
-            android:text="Seja Bem vindo denovo!" />
+            android:text="Seja Bem vindo denovo!"
+            android:fontFamily="@font/Poppins_SemiBold"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,7 +51,8 @@
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="Email" />
+                android:text="Email"
+                android:fontFamily="@font/Poppins_Medium"/>
 
             <EditText
                 android:id="@+id/PasswordInput"
@@ -64,7 +66,8 @@
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="text"
-                android:text="Password" />
+                android:text="Password"
+                android:fontFamily="@font/Poppins_Medium"/>
 
             <TextView
                 android:id="@+id/forgotPassword_redirect_link"
@@ -75,7 +78,8 @@
                 android:textAlignment="viewEnd"
                 android:textStyle="bold"
                 android:layout_marginBottom="25dp"
-                android:text="Esqueceu a palavra-passe?" />
+                android:text="Esqueceu a palavra-passe?"
+                android:fontFamily="@font/Poppins_SemiBold"/>
 
 
         </LinearLayout>
@@ -84,12 +88,12 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:textSize="18dp"
-            android:textStyle="bold"
             android:padding="15dp"
             android:layout_height="wrap_content"
             android:background="@drawable/login_button"
             android:text="Iniciar Sessão"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:fontFamily="@font/Poppins_SemiBold"/>
 
         <TextView
             android:id="@+id/register_redirect_link"
@@ -99,7 +103,8 @@
             android:textSize="16dp"
             android:textStyle="bold"
             android:textAlignment="center"
-            android:text="Criar conta nova?"/>
+            android:text="Criar conta nova?"
+            android:fontFamily="@font/Poppins_SemiBold"/>
 
     </LinearLayout>
 </androidx.appcompat.widget.LinearLayoutCompat>
