@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".WelcomeActivity"
-    android:fontFamily="@font/Poppins_Bold">
+    android:background="@color/white">
 
 
     <LinearLayout
         android:orientation="vertical"
         android:id="@+id/topContainer"
         android:layout_width="match_parent"
-        android:layout_height="0"
+        android:layout_height="0dp"
         android:layout_weight="1"
         android:gravity="center">
 
@@ -31,23 +31,25 @@
         android:orientation="vertical"
         android:id="@+id/bottomContainer"
         android:layout_width="match_parent"
-        android:layout_height="0"
+        android:layout_height="0dp"
         android:layout_weight="1">
         
         <LinearLayout
             android:id="@+id/titleContainer"
             android:layout_width="match_parent"
-            android:layout_height="0"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Começe a gerir a sua Equipa"
-                android:textSize="35"
-                android:fontFamily="@font/Poppins_SemiBold"
+                android:textSize="35dp"
+                android:fontFamily="@font/poppins_semibold"
                 android:textColor="@color/bice_blue"
                 android:textAlignment="center"/>
+
         </LinearLayout>
 
         <LinearLayout
@@ -56,16 +58,18 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-            <TextView
+
+                <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="Explore todas as funcionalidaes que o ajudarão a gerir sua equipa e colaboradores"
                 android:textSize="14dp"
-                android:fontFamily="@font/Poppins_Regular"
+                android:fontFamily="@font/poppins_regular"
                 android:textColor="@color/black"
                 android:textAlignment="center"
                 android:paddingLeft="40dp"
                 android:paddingRight="40dp"/>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/buttonContainer"
@@ -76,28 +80,28 @@
             
             <android.widget.Button
                 android:id="@+id/btgoToLogin"
-                android:layout_marginLeft="50"
-                android:layout_width="0"
-                android:layout_height="60"
+                android:layout_marginLeft="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:layout_marginRight="10dp"
                 android:text="Iniciar"
                 android:textColor="@color/white"
                 android:background="@drawable/login_button"
-                android:fontFamily="@font/Poppins_SemiBold"
+                android:fontFamily="@font/poppins_semibold"
                 >
 
             </android.widget.Button>
             <android.widget.Button
                 android:id="@+id/btgoToRegister"
-                android:layout_marginRight="50"
-                android:layout_width="0"
-                android:layout_height="60"
+                android:layout_marginRight="50dp"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
                 android:text="Registar"
                 android:background="@drawable/silver_button"
                 android:textColor="@color/black"
-                android:fontFamily="@font/Poppins_SemiBold"
+                android:fontFamily="@font/poppins_semibold"
                 >
 
             </android.widget.Button>

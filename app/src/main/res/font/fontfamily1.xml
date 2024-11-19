@@ -3,69 +3,69 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Black" />
+        android:font="@font/poppins_black" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Bold" />
+        android:font="@font/poppins_bold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_BlackItalic" />
+        android:font="@font/poppins_blackitalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_BoldItalic" />
+        android:font="@font/poppins_bolditalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_ExtraBold" />
+        android:font="@font/poppins_extrabold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_ExtraBoldItalic" />
+        android:font="@font/poppins_extrabolditalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_ExtraLight" />
+        android:font="@font/poppins_extralight" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_ExtraLightItalic" />
+        android:font="@font/poppins_extralightitalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Italic" />
+        android:font="@font/poppins_italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Light" />
+        android:font="@font/poppins_light" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_LightItalic" />
+        android:font="@font/poppins_lightitalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Medium" />
+        android:font="@font/poppins_medium" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_MediumItalic" />
+        android:font="@font/poppins_mediumitalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Regular" />
+        android:font="@font/poppins_regular" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_SemiBold" />
+        android:font="@font/poppins_semibold" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_SemiBoldItalic" />
+        android:font="@font/poppins_semibolditalic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_ThinItalic" />
+        android:font="@font/poppins_thinitalic" />
 </font-family>

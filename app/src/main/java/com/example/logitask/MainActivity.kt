@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        Log.d("Teste","Teste git")
-        Log.d("Teste","Teste git2")
+
     }
 }
