@@ -40,20 +40,37 @@
             android:layout_height="0"
             android:layout_weight="1"
             android:orientation="horizontal">
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Começe a gerir a sua Equipa"
+                android:textSize="35"
+                android:fontFamily="@font/Poppins_SemiBold"
+                android:textColor="@color/bice_blue"
+                android:textAlignment="center"/>
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/subtitleContainer"
             android:layout_width="match_parent"
-            android:layout_height="0"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Explore todas as funcionalidaes que o ajudarão a gerir sua equipa e colaboradores"
+                android:textSize="14dp"
+                android:fontFamily="@font/Poppins_Regular"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/buttonContainer"
             android:layout_width="match_parent"
-            android:layout_height="0"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:orientation="horizontal">
             
@@ -74,12 +91,10 @@
             <android.widget.Button
                 android:id="@+id/btgoToRegister"
                 android:layout_marginRight="50"
-                android:layout_marginLeft="10dp"
                 android:layout_width="0"
                 android:layout_height="60"
                 android:layout_weight="1"
                 android:text="Registar"
-                android:textFontWeight="bold"
                 android:textColor="@color/black"
                 android:fontFamily="@font/Poppins_SemiBold"
                 >
