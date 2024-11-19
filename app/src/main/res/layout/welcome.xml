@@ -83,7 +83,7 @@
                 android:layout_marginRight="10dp"
                 android:text="Iniciar"
                 android:textColor="@color/white"
-                android:background="@color/pumpkin"
+                android:background="@drawable/login_button"
                 android:fontFamily="@font/Poppins_SemiBold"
                 >
 
@@ -95,6 +95,7 @@
                 android:layout_height="60"
                 android:layout_weight="1"
                 android:text="Registar"
+                android:background="@drawable/silver_button"
                 android:textColor="@color/black"
                 android:fontFamily="@font/Poppins_SemiBold"
                 >
