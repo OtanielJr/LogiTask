@@ -15,12 +15,28 @@
 
         <activity
             android:name=".WelcomeActivity"
-            android:exported="true">
+
+            android:exported="true"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".LoginPageActivity"
+        android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
+
+        </activity>
+        <activity android:name=".RegisterPageActivity"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
+
         </activity>
     </application>
 

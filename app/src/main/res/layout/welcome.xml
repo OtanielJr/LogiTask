@@ -89,6 +89,7 @@
                 android:textColor="@color/white"
                 android:background="@drawable/login_button"
                 android:fontFamily="@font/poppins_semibold"
+                android:onClick="onLoginClick"
                 >
 
             </android.widget.Button>
@@ -102,6 +103,7 @@
                 android:background="@drawable/silver_button"
                 android:textColor="@color/black"
                 android:fontFamily="@font/poppins_semibold"
+                android:onClick="onRegiClick"
                 >
 
             </android.widget.Button>
