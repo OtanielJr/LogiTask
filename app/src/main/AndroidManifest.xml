@@ -15,7 +15,6 @@
 
         <activity
             android:name=".WelcomeActivity"
-
             android:exported="true"
             android:screenOrientation="locked"
             tools:ignore="DiscouragedApi">
@@ -25,6 +24,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
         <activity android:name=".LoginPageActivity"
         android:screenOrientation="locked"
@@ -36,6 +37,12 @@
             android:screenOrientation="locked"
             tools:ignore="DiscouragedApi">
 
+
+        </activity>
+
+        <activity android:name=".HomeActivity"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi" >
 
         </activity>
     </application>
