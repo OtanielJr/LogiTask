@@ -3,13 +3,16 @@ package com.example.logitask.navigationSystem
 import android.app.Activity
 import android.util.Log
 import android.content.Intent
+import com.example.logitask.HomeActivity
 import com.example.logitask.LoginPageActivity
 import com.example.logitask.WelcomeActivity
 import com.example.logitask.RegisterPageActivity
 var routes: MutableList<Destiny> = mutableListOf(
     Destiny("Welcome", WelcomeActivity()),
     Destiny("Login", LoginPageActivity()),
-    Destiny("Register", RegisterPageActivity())
+    Destiny("Register", RegisterPageActivity()),
+    Destiny("Home", HomeActivity()
+)
 )
 
 class Routes {

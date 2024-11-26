@@ -1,10 +1,13 @@
 package com.example.logitask
 
 import android.os.Bundle
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.logitask.navigationSystem.Routes
+import com.example.logitask.navigationSystem.routes
 
 class LoginPageActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,5 +19,8 @@ class LoginPageActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+    fun loginClick(view: View){
+        Routes.routeNavigation(this,"Home")
     }
 }
