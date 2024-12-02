@@ -10,7 +10,9 @@ import com.example.logitask.RegisterPageActivity
 var routes: MutableList<Destiny> = mutableListOf(
     Destiny("Welcome", WelcomeActivity()),
     Destiny("Login", LoginPageActivity()),
-    Destiny("Register", RegisterPageActivity())
+    Destiny("Register", RegisterPageActivity()),
+    Destiny("Home", HomeActivity()
+)
 )
 
 class Routes {
