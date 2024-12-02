@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/titleFragmentRecruitment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/bice_blue"
+            android:textStyle="bold"
+            android:textSize="32dp"
+            android:text="Convocar" />
         <ImageView
             android:id="@+id/iv_recruitment"
             android:src="@drawable/ic_recruitment_default"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_centerInParent="true"/>
-    </RelativeLayout>
-</FrameLayout>
+            android:layout_centerInParent="true"
+            android:onClick="onNavRecruitmentClick"/>
+
+</LinearLayout>
