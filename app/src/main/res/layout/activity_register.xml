@@ -42,7 +42,7 @@
 
 
             <EditText
-                android:id="@+id/emailInput"
+                android:id="@+id/emailInsert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/register_input"
@@ -53,10 +53,12 @@
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="Email" />
+                android:hint="Email"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/PasswordInput"
+                android:id="@+id/PasswordInsert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/register_input"
@@ -66,11 +68,13 @@
                 android:layout_marginBottom="40dp"
                 android:textStyle="bold"
                 android:ems="10"
-                android:inputType="textVisiblePassword"
-                android:text="Password" />
+                android:inputType="text"
+                android:hint="Password"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black"/>
 
             <EditText
-                android:id="@+id/PasswordRepeatInput"
+                android:id="@+id/PasswordRepeatInsert"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/register_input"
@@ -80,8 +84,10 @@
                 android:textSize="18dp"
                 android:layout_marginBottom="40dp"
                 android:ems="10"
-                android:inputType="textVisiblePassword"
-                android:text="Insira a password novamente" />
+                android:inputType="text"
+                android:hint="Password Novamente"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black" />
 
 
         </LinearLayout>
@@ -95,7 +101,8 @@
             android:layout_height="wrap_content"
             android:background="@drawable/register_button"
             android:text="Criar Conta"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:onClick="registerClick"/>
 
         <TextView
             android:id="@+id/login_redirect_link"

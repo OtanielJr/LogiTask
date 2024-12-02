@@ -54,7 +54,7 @@
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:hint="Password"
+                android:hint="Email"
                 android:textColor="@color/black"
                 android:textColorHint="@color/silver"
                 android:fontFamily="@font/poppins_medium"/>
