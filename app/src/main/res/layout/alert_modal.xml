@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/modal"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tem a certeza?"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/modalMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Tem a certeza de que deseja fazer isto?"
+            android:textColor="@color/black"
+            android:textSize="18dp">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <android.widget.Button
+                android:id="@+id/rejectModalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:background="@drawable/reject_modal_btn"
+                android:text="Não, cancele"
+                android:textColor="@color/white"
+                android:textSize="14dp">
+
+            </android.widget.Button>
+
+
+            <android.widget.Button
+                android:id="@+id/confirmModalBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/confirm_modal_btn"
+                android:text="Sim, prosseguir"
+                android:textColor="@color/white"
+                android:textSize="14dp">
+
+            </android.widget.Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -2,6 +2,9 @@ package com.example.logitask
 
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
+import android.view.MenuItem
+import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,7 +13,9 @@ import androidx.fragment.app.Fragment
 import com.example.logitask.fragments.DashboardFragment
 import com.example.logitask.fragments.HomeFragment
 import com.example.logitask.fragments.RecruitmentFragment
+import com.example.logitask.navigationSystem.Routes
 import com.google.android.material.badge.BadgeDrawable
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class HomeActivity : AppCompatActivity() {
@@ -23,6 +28,7 @@ class HomeActivity : AppCompatActivity() {
 
 
         // Fragments initialization
+
         val homeFragment = HomeFragment()
         val dashboardFragment = DashboardFragment()
         val recruitmentFragment = RecruitmentFragment()
@@ -51,6 +57,24 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
+        /*val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.nav_home -> {
+                    Log.d("Nav home clicked", "Nav home clicked")
+                    Routes.routeNavigation(this, "Home")
+                }
+                R.id.nav_dashboard -> {
+                    Log.d("Nav dashboard", "Nav dashboard clicked")
+                    Routes.routeNavigation(this, "Dashboard")
+                }
+                R.id.nav_recruitment -> {
+                    Log.d("Nav recruitment", "Nav recruitment clicked")
+                    Routes.routeNavigation(this, "Recruitment")
+                }
+            }
+            true
+        }*/
 
 
     private fun setCurrentFragment(fragment: Fragment) =
