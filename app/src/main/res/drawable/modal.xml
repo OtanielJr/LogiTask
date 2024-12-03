@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <stroke
-        android:color="@android:color/silver"
+    <!--<stroke
+        android:color="@colo"
         android:width="3dp" />
 
-    <!-- Círculo -->
-    <corners android:radius="90dp"/>
+
+    <corners android:radius="90dp"/>-->
 </selector>

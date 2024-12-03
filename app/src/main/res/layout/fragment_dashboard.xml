@@ -5,23 +5,65 @@
     android:orientation="vertical">
 
 
-
-        <TextView
-            android:id="@+id/titleFragmentDashboard"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textColor="@color/bice_blue"
-            android:textStyle="bold"
-            android:textSize="32dp"
-            android:text="Gestão" />
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/iv_dashboard"
-            android:src="@drawable/ic_dashboard_default"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_centerInParent="true"
-            android:onClick="onNavDashboardClick"/>
+                <TextView
+                    android:id="@+id/titleFragmentDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gestão"
+                    android:textAlignment="center"
+                    android:textColor="@color/bice_blue"
+                    android:textSize="32dp"
+                    android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:paddingHorizontal="40dp"
+            android:id="@+id/content_layout"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:paddingHorizontal="40dp"
+            android:id="@+id/buttons_layout"
+            android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/gerir_equipas_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/register_button"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:textSize="18dp"
+                    android:layout_marginBottom="20dp"
+                    android:textFontWeight="500"
+                    android:text="Gerir Equipas" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/gerir_colaboradores_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:background="@drawable/login_button"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="15dp"
+                    android:textSize="18dp"
+                    android:textFontWeight="500"
+                    android:text="Gerir Colaboradores" />
+        </LinearLayout>
 
 </LinearLayout>

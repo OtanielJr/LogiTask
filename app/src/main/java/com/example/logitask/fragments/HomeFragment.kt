@@ -28,12 +28,13 @@ class HomeFragment : Fragment() {
 
         logoutButton.setOnClickListener {
             val message : String = "Tens a certeza?"
-            showCustomDialogBox(message)
+            /*showCustomDialogBox(message)*/
         }
 
 
         return view
     }
+    /*
     private fun showCustomDialogBox(message: String?) {
         val dialog = Dialog(this)
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
@@ -54,5 +55,5 @@ class HomeFragment : Fragment() {
 
         }
         dialog.show()
-    }
+    }*/
 }
