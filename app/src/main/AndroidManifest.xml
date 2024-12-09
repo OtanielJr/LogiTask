@@ -26,6 +26,8 @@
             </intent-filter>
 
 
+
+
         </activity>
         <activity android:name=".LoginPageActivity"
         android:screenOrientation="locked"
@@ -43,6 +45,13 @@
         <activity android:name=".HomeActivity"
             android:screenOrientation="locked"
             tools:ignore="DiscouragedApi" >
+
+        </activity>
+        <activity
+            android:name=".CreateTeamActivity"
+            android:exported="true"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
 
         </activity>
     </application>
