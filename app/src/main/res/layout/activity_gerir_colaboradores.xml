@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@drawable/user_menu"
+        android:paddingTop="25dp"
+        android:paddingHorizontal="25dp">
+
+        <ImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/user_image"
+            android:scaleType="centerCrop"/>
+
+
+        <TextView
+            android:id="@+id/welcome_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Bem vindo"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleFragmentDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Gerir Colaboradores"
+            android:textColor="@color/pumpkin"
+            android:textSize="32dp"
+            android:textAlignment="center"
+            android:gravity="bottom"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/layout_list_colaboradores"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:paddingHorizontal="40dp"
+        android:id="@+id/buttons_layout"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adicionarColaboradorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/register_button"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="15dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"
+            android:textFontWeight="500"
+            android:text="Adicionar Colaborador" />
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
