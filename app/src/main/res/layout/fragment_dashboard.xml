@@ -51,7 +51,8 @@
                     android:textSize="18dp"
                     android:layout_marginBottom="20dp"
                     android:textFontWeight="500"
-                    android:text="Gerir Equipas" />
+                    android:text="Gerir Equipas"
+                    android:onClick="onManageTeamClick"/>
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/gerir_colaboradores_btn"
@@ -63,7 +64,8 @@
                     android:paddingVertical="15dp"
                     android:textSize="18dp"
                     android:textFontWeight="500"
-                    android:text="Gerir Colaboradores" />
+                    android:text="Gerir Colaboradores"
+                    android:onClick="onManageColaboratorsClick"/>
         </LinearLayout>
 
 </LinearLayout>

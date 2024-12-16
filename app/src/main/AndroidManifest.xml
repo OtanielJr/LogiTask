@@ -19,11 +19,7 @@
             android:screenOrientation="locked"
             tools:ignore="DiscouragedApi">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
 
 
@@ -44,16 +40,23 @@
 
         <activity android:name=".HomeActivity"
             android:screenOrientation="locked"
-            tools:ignore="DiscouragedApi" >
+            android:exported="true"
+            tools:ignore="DiscouragedApi">
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
 
         </activity>
+
         <activity
-            android:name=".CreateTeamActivity"
+            android:name=".CreateTeam"
             android:exported="true"
             android:screenOrientation="locked"
             tools:ignore="DiscouragedApi">
 
         </activity>
     </application>
-
 </manifest>
