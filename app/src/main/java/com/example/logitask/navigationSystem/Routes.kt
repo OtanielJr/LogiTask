@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import android.content.Intent
 import com.example.logitask.CreateTeam
+import com.example.logitask.CreateUser1
 import com.example.logitask.HomeActivity
 import com.example.logitask.LoginPage
 import com.example.logitask.ManageColaborators
@@ -20,7 +21,8 @@ var routes: MutableList<Destiny> = mutableListOf(
     Destiny("ManageTeam", ManageTeam()),
     Destiny("UserProfile", UserProfile()),
     Destiny("CreateTeam", CreateTeam()),
-    Destiny("ManageColaborators", ManageColaborators())
+    Destiny("ManageColaborators", ManageColaborators()),
+    Destiny("CreateUser1", CreateUser1())
 )
 
 class Routes {

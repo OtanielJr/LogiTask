@@ -79,5 +79,12 @@
 
         </activity>
 
+        <activity
+            android:name=".CreateUser1"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
+        </activity>
+
     </application>
 </manifest>

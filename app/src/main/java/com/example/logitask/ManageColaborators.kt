@@ -1,10 +1,13 @@
 package com.example.logitask
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.logitask.navigationSystem.Routes
 
 class ManageColaborators: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,5 +20,11 @@ class ManageColaborators: AppCompatActivity() {
             insets
         }
 
+        val addColaboratorBtn = findViewById<AppCompatButton>(R.id.adicionarColaboradorBtn)
+
+        addColaboratorBtn.setOnClickListener {
+            Log.d("CreateUser1","CreateUser1 clicked")
+            Routes.routeNavigation(this,"CreateUser1")
+        }
     }
 }
