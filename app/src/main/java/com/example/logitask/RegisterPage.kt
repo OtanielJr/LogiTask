@@ -9,10 +9,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.util.Log
-import com.example.logitask.database.Register
 import com.example.logitask.navigationSystem.Routes
 
-class RegisterPageActivity : AppCompatActivity() {
+class RegisterPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

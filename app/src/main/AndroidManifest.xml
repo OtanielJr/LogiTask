@@ -25,13 +25,13 @@
 
 
         </activity>
-        <activity android:name=".LoginPageActivity"
+        <activity android:name=".LoginPage"
         android:screenOrientation="locked"
             tools:ignore="DiscouragedApi">
 
 
         </activity>
-        <activity android:name=".RegisterPageActivity"
+        <activity android:name=".RegisterPage"
             android:screenOrientation="locked"
             tools:ignore="DiscouragedApi">
 
@@ -58,5 +58,26 @@
             tools:ignore="DiscouragedApi">
 
         </activity>
+        <activity
+            android:name=".ManageTeam"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
+        </activity>
+
+        <activity
+            android:name=".ManageColaborators"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
+        </activity>
+
+        <activity
+            android:name=".UserProfile"
+            android:screenOrientation="locked"
+            tools:ignore="DiscouragedApi">
+
+        </activity>
+
     </application>
 </manifest>

@@ -1,8 +1,6 @@
 package com.example.logitask
 
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Email
-import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -13,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.logitask.navigationSystem.Routes
 import com.example.logitask.database.Login
 
-class LoginPageActivity : AppCompatActivity() {
+class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
