@@ -1,15 +1,19 @@
 package com.example.logitask
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import com.example.logitask.navigationSystem.Routes
-import com.example.logitask.database.Login
+import com.example.logitask.database.doLogin
+import kotlinx.coroutines.launch
 
 class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +38,24 @@ class LoginPage : AppCompatActivity() {
     fun loginClick(view: View){
         val data = fieldsVerify()
         if(data != null){
-            Login(data)
+            lifecycleScope.launch {
+                val success = doLogin(data)
+                if(success) {
+                    Toast.makeText(
+                        this@LoginPage,
+                        "Login realizado com sucesso!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    // Redirecionar para a próxima página
+                    startActivity(Intent(this@LoginPage, HomeActivity::class.java))
+                }else{
+                    Toast.makeText(
+                        this@LoginPage,
+                        "Erro ao realizar login. Verifique suas credenciais.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
         }
         //Routes.routeNavigation(this,"Home")
 
