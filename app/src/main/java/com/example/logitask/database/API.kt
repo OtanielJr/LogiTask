@@ -10,7 +10,7 @@ import java.security.cert.X509Certificate
 import java.security.SecureRandom
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
-import okhttp3.Response
+
 
 private fun certificationVerify(): OkHttpClient {
     // Certification Verify
@@ -72,7 +72,7 @@ fun listarUsers(): List<Map<String, Any>> {
     return data
 }
 
-fun login(email: String, pass: String): List<Map<String, Any>> {
+fun login(email: String, pass: String): Map<String, Any> {
 
     val json = """
         {
@@ -83,7 +83,7 @@ fun login(email: String, pass: String): List<Map<String, Any>> {
     val mediaType = "application/json; charset=utf-8".toMediaType()
     val requestBody = json.toRequestBody(mediaType)
 
-    var data: List<Map<String, Any>> = emptyList()
+    var data: Map<String, Any> = emptyMap()
 
     val client = certificationVerify()
 
@@ -104,7 +104,7 @@ fun login(email: String, pass: String): List<Map<String, Any>> {
                 val apiResponse: Map<String, Any> = Gson().fromJson(jsonResponse, apiResponseType)
 
                 if (apiResponse["status"] == "success" && apiResponse["data"] is Map<*, *>) {
-                    data = apiResponse["data"] as List<Map<String, Any>>
+                    data = apiResponse["data"] as Map<String, Any>
                 } else {
                     println("Falha na API: ${apiResponse["status"]}")
                 }
