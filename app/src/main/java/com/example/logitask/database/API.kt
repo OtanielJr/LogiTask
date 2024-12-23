@@ -44,7 +44,7 @@ fun listarUsers(): List<Map<String, Any>> {
     val client = certificationVerify()
 
     val request = Request.Builder()
-        .url("https://192.168.50.76/api.php?action=listarUsers")
+        .url("https://192.168.53.126/api.php?action=listarUsers")
         .build()
 
     client.newCall(request).execute().use { response ->
@@ -88,7 +88,7 @@ fun login(email: String, pass: String): Map<String, Any> {
     val client = certificationVerify()
 
     val request = Request.Builder()
-        .url("https://192.168.50.76/api.php?action=login")
+        .url("https://192.168.53.126/api.php?action=login")
         .post(requestBody)
         .build()
 
