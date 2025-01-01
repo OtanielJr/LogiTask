@@ -22,34 +22,45 @@
             android:layout_width="match_parent"
             android:id="@+id/createUserRoutes"
             android:layout_height="0dp"
-            android:layout_weight="0.05"
+            android:layout_weight="0.1"
             android:orientation="vertical">
+
+
 
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/topContainer"
             android:layout_width="match_parent"
+            android:id="@+id/mainText"
             android:layout_height="0dp"
-            android:layout_weight="0.40"
-            android:gravity="center"
+            android:layout_weight="0.20"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="descricao_imagem"
-                android:src="@drawable/create_user_page_image"
-                android:scaleType="fitXY"/>
+                android:textColor="@color/bice_blue"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:gravity="center"
+                android:text="Identificação e IBAN" />
 
-
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:text="Números de Identificação fiscal, social e bancárias para procedimentos contratuais" />
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/bottomContainer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="0.55"
+            android:layout_weight="0.70"
             android:orientation="vertical">
 
 
@@ -64,98 +75,14 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/nomeText"
+                        android:id="@+id/identificacaoText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingBottom="4dp"
-                        android:text="Nome completo" />
-
-                    <EditText
-                        android:id="@+id/default3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/register_input"
-                        android:ems="10"
-                        android:hint="Insira o nome completo"
-                        android:inputType="textEmailAddress"
-
-                        android:paddingHorizontal="18dp"
-                        android:paddingVertical="18dp"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="18dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/dataText"
-                        android:paddingBottom="4dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Data de Nascimento" />
-
-                    <LinearLayout
-                        android:id="@+id/dateLayout"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/spinner"
-                        android:paddingHorizontal="10dp"
-                        android:paddingVertical="5dp"
-                        android:orientation="horizontal"
-                        android:clickable="true"
-                        android:focusable="true">
-
-                        <ImageButton
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/calendar">
-
-                        </ImageButton>
-
-                        <TextView
-                            android:id="@+id/dateText"
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:paddingLeft="15dp"
-                            android:textSize="18dp"
-                            android:gravity="center"
-                            android:text="01/01/2025">
-                        </TextView>
-                    </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingBottom="25dp"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/nnacionalidadeText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingBottom="4dp"
-                        android:text="Nacionalidade" />
+                        android:text="Identificação" />
 
                     <Spinner
-                        android:id="@+id/nacionalidade_spinner"
+                        android:id="@+id/identificacao_spinner"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
@@ -165,23 +92,107 @@
                         android:paddingHorizontal="18dp"
                         android:paddingVertical="18dp"
                         android:textSize="22dp"
+                        android:layout_marginBottom="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/contribuinteText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:text="Número de Identificação Fiscal" />
+
+                    <EditText
+                        android:id="@+id/contribuinteInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginBottom="10dp"
-                        android:text="Name" />
+                        android:background="@drawable/register_input"
+                        android:ems="10"
+                        android:hint="Insira o NIF"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="18dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/identidadeBancariaText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:text="Número de Identificação bancária" />
+
+                    <EditText
+                        android:id="@+id/identidadeBancariaInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/register_input"
+                        android:ems="10"
+                        android:hint="Insira o IBAN/NIB"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="18dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/segSocialText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="4dp"
+                        android:text="Número de Segurança Social" />
+
+                    <EditText
+                        android:id="@+id/segSocialInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/register_input"
+                        android:ems="10"
+                        android:hint="NISS"
+                        android:inputType="textEmailAddress"
+                        android:paddingHorizontal="18dp"
+                        android:paddingVertical="18dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="18dp" />
                 </LinearLayout>
             </LinearLayout>
 
             <android.widget.Button
-                android:id="@+id/next_step_btn"
+                android:id="@+id/finalizar_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/login_button"
                 android:textColor="@color/white"
                 android:layout_gravity="center"
+                android:layout_marginTop="25dp"
                 android:paddingHorizontal="100dp"
                 android:textSize="18dp"
                 android:paddingVertical="20dp"
                 android:textStyle="bold"
-                android:text="Proximo passo" />
+                android:text="Finalizar" />
         </LinearLayout>
 
     </LinearLayout>
