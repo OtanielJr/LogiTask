@@ -5,7 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/header_layout"
@@ -32,6 +33,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_vertical"
+            android:inputType="text"
+            android:textColor="@color/black"
             android:paddingStart="16dp"
             android:text="Bem vindo"
             android:textSize="20dp"
@@ -68,7 +71,10 @@
             android:layout_alignParentBottom="true"
             android:background="@drawable/footer"
             app:itemIconSize="40dp"
+            app:itemActiveIndicatorStyle="@color/white"
             app:itemIconTint="@drawable/nav_icon_colour_selector"
+            app:itemBackground="@android:color/transparent"
+            app:itemRippleColor="@android:color/transparent"
             app:labelVisibilityMode="unlabeled"
             app:menu="@menu/nav_menu" />
     </LinearLayout>

@@ -1,26 +1,32 @@
 package com.example.logitask
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.logitask.cache.getUserDataFromCache
 import com.example.logitask.fragments.DashboardFragment
 import com.example.logitask.fragments.HomeFragment
 import com.example.logitask.fragments.RecruitmentFragment
 import com.example.logitask.navigationSystem.Routes
 import com.google.android.material.badge.BadgeDrawable
-
+import java.io.File
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 
 class HomeActivity : AppCompatActivity() {
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -56,26 +62,17 @@ class HomeActivity : AppCompatActivity() {
             }
             true
         }
+
+    val welcomeText = findViewById<TextView>(R.id.welcome_message)
+    val user = getUserDataFromCache(this@HomeActivity)
+        if (user != null) {
+            welcomeText.text = "Bem vindo, "+user.username
+            Log.d("username", user.username)
+        }
+
     }
 
-        /*val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
-        bottomNavigationView.setOnItemSelectedListener { item ->
-            when (item.itemId) {
-                R.id.nav_home -> {
-                    Log.d("Nav home clicked", "Nav home clicked")
-                    Routes.routeNavigation(this, "Home")
-                }
-                R.id.nav_dashboard -> {
-                    Log.d("Nav dashboard", "Nav dashboard clicked")
-                    Routes.routeNavigation(this, "Dashboard")
-                }
-                R.id.nav_recruitment -> {
-                    Log.d("Nav recruitment", "Nav recruitment clicked")
-                    Routes.routeNavigation(this, "Recruitment")
-                }
-            }
-            true
-        }*/
+
 
 
     private fun setCurrentFragment(fragment: Fragment) =
@@ -83,4 +80,10 @@ class HomeActivity : AppCompatActivity() {
             replace(R.id.fl_wrapper, fragment)
             commit()
         }
+
+
+}
+
+private operator fun CharSequence.plusAssign(s: String) {
+
 }

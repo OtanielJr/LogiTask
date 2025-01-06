@@ -1,5 +1,6 @@
 package com.example.logitask
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -9,7 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import android.util.Log
+import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
+import com.example.logitask.database.doLogin
+import com.example.logitask.database.doRegister
 import com.example.logitask.navigationSystem.Routes
+import kotlinx.coroutines.launch
 
 class RegisterPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,18 +38,40 @@ class RegisterPage : AppCompatActivity() {
     fun registerClick(view: View){
         val data = fieldVerify()
         if(data != null){
-            Log.d("Criado","Criado")
+            lifecycleScope.launch {
+                val success = doRegister(data, this@RegisterPage)
+                if(success) {
+                    Toast.makeText(
+                        this@RegisterPage,
+                        "Registo realizado com sucesso!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    // Redirecionar para a próxima página
+                    startActivity(Intent(this@RegisterPage, HomeActivity::class.java))
+                }else{
+                    Toast.makeText(
+                        this@RegisterPage,
+                        "Erro ao realizar registo. Verifique os campos.",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
         }
 
     }
 
     private fun fieldVerify():List<String>?{
+
         val emailInput = findViewById<EditText>(R.id.emailInsert)
+        val nameInput = findViewById<EditText>(R.id.nameInsert)
+        val userNameInput = findViewById<EditText>(R.id.userNameInsert)
         val passInput = findViewById<EditText>(R.id.PasswordInsert)
         val pass2Input = findViewById<EditText>(R.id.PasswordRepeatInsert)
 
 
         var email : String
+        var name : String
+        var userName : String
         var pass : String
         var pass2 : String
 
@@ -52,10 +80,21 @@ class RegisterPage : AppCompatActivity() {
 
 
         isValid = true
+        name = nameInput.text.toString()
+        userName = userNameInput.text.toString()
         email = emailInput.text.toString()
         pass = passInput.text.toString()
         pass2 = pass2Input.text.toString()
 
+
+        if(nameInput.text.isEmpty()){
+            emailInput.error = "Este campo é obrigatório"
+            isValid = false
+        }
+        if(userNameInput.text.isEmpty()){
+            emailInput.error = "Este campo é obrigatório"
+            isValid = false
+        }
         if(emailInput.text.isEmpty()){
             emailInput.error = "Este campo é obrigatório"
             isValid = false
@@ -73,8 +112,9 @@ class RegisterPage : AppCompatActivity() {
             isValid = false
         }
 
+
         return if(isValid){
-            listOf(email,pass,pass2)
+            listOf(email,pass2,name,userName)
         }else{
             null
         }

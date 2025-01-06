@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_height="match_parent"
     android:paddingHorizontal="20dp"
-    android:paddingVertical="90dp"
+    android:paddingVertical="0dp"
     android:background="@color/white"
     >
 
@@ -40,7 +40,36 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
+            <EditText
+                android:id="@+id/nameInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_input"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="18dp"
+                android:textSize="18dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Nome Completo"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/userNameInsert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_input"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="18dp"
+                android:textSize="18dp"
+                android:layout_marginBottom="30dp"
+                android:textStyle="bold"
+                android:ems="10"
+                android:inputType="text"
+                android:hint="Username"
+                android:textColorHint="@color/silver"
+                android:textColor="@color/black"/>
             <EditText
                 android:id="@+id/emailInsert"
                 android:layout_width="match_parent"
@@ -49,7 +78,7 @@
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="18dp"
                 android:textSize="18dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="30dp"
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="textEmailAddress"
@@ -65,7 +94,7 @@
                 android:paddingHorizontal="15dp"
                 android:paddingVertical="18dp"
                 android:textSize="18dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="30dp"
                 android:textStyle="bold"
                 android:ems="10"
                 android:inputType="text"
@@ -82,7 +111,7 @@
                 android:paddingVertical="18dp"
                 android:textStyle="bold"
                 android:textSize="18dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginBottom="30dp"
                 android:ems="10"
                 android:inputType="text"
                 android:hint="Password Novamente"

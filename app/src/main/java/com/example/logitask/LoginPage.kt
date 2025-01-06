@@ -2,6 +2,7 @@ package com.example.logitask
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -14,6 +15,8 @@ import androidx.lifecycle.lifecycleScope
 import com.example.logitask.navigationSystem.Routes
 import com.example.logitask.database.doLogin
 import kotlinx.coroutines.launch
+import java.io.File
+
 
 class LoginPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,7 +34,13 @@ class LoginPage : AppCompatActivity() {
             Routes.routeNavigation(this, "Register")
         }
 
+        val cacheFile = File(this@LoginPage.cacheDir, "userCache.json")
 
+        if(cacheFile.exists() && cacheFile.length() != 0L){
+            startActivity(Intent(this@LoginPage, HomeActivity::class.java))
+        }else{
+            Log.e("CacheFileCheck","O ficheiro de cache não existe ou está vazio")
+        }
     }
 
 
@@ -39,7 +48,7 @@ class LoginPage : AppCompatActivity() {
         val data = fieldsVerify()
         if(data != null){
             lifecycleScope.launch {
-                val success = doLogin(data)
+                val success = doLogin(data, this@LoginPage)
                 if(success) {
                     Toast.makeText(
                         this@LoginPage,
