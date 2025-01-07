@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/sidebar_perfil"
+            android:icon="@drawable/ic_home_default"
+            android:title="perfil"/>
+
+        <item
+            android:id="@+id/sidebar_dashboard"
+            android:icon="@drawable/ic_dashboard_default"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/sidebar_colaboradores"
+            android:icon="@drawable/user_icon"
+            android:title="Gerir colaboradores"/>
+
+        <item
+            android:id="@+id/sidebar_equipas"
+            android:icon="@drawable/user_icon"
+            android:title="Gerir equipas"/>
+        <item
+            android:id="@+id/sidebar_convocar"
+            android:icon="@drawable/ic_recruitment_default"
+            android:title="Convocatórias"/>
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_icon"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>

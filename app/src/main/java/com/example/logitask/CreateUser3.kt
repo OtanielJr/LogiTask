@@ -27,7 +27,6 @@ class CreateUser3: AppCompatActivity() {
         }
 
         // Lista de nacionalidades temporárias para o Spinner
-        // Muda isto no backend se quiseres
         val nacionalidades = listOf("Residência", "Morada")
 
         // Criando o ArrayAdapter para o Spinner
