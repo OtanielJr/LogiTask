@@ -47,7 +47,7 @@ fun listarUsers(): List<Map<String, Any>> {
     val client = certificationVerify()
 
     val request = Request.Builder()
-        .url("https://161.230.187.32/api.php?action=listarUsers")
+        .url("https://161.230.187.32/read_api.php?action=teste")
         .build()
 
     client.newCall(request).execute().use { response ->
@@ -91,7 +91,7 @@ fun login(email: String, pass: String, context: Context): Map<String, Any> {
     val client = certificationVerify()
 
     val request = Request.Builder()
-        .url("https://161.230.187.32/api.php?action=login")
+        .url("https://161.230.187.32/session_api.php?action=login")
         .post(requestBody)
         .build()
 
@@ -147,7 +147,7 @@ fun register(name: String, userName:String, email: String, pass: String): Boolea
     val client = certificationVerify()
 
     val request = Request.Builder()
-        .url("https://161.230.187.32/api.php?action=register")
+        .url("https://161.230.187.32/session_api.php?action=register")
         .post(requestBody)
         .build()
 
